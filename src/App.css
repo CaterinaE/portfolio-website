@@ -20,14 +20,14 @@ body {
 
 /* Header Styles   top: 0;
  */
-header {
+ header {
   padding: 20px 0;
   position: sticky;
   width: 100%;
   z-index: 1000;
-  border-bottom: #fff 1px solid; 
- 
- }
+  border-bottom: 4px solid #fff;
+}
+
 a {
   text-decoration: none;
 }
@@ -121,7 +121,8 @@ header nav ul li a:hover {
   background-image: radial-gradient(black 1px, transparent 1px);
   background-size: 20px 20px;
   padding: 40px;
- }
+  color: black;
+}
 
 
 
@@ -149,18 +150,33 @@ header nav ul li a:hover {
   background-color: white;
   border-left: 3px solid rgb(11, 71, 11)   ; 
 }
+#about {
+  background:   rgb(11, 71, 11)   ;
+  color: white;
+   padding: 100px 0px;
+  margin-top: -70px;
+  margin-bottom: -50px;
+ }
+ 
 
 /* About Section */
-
-
-#about h2 {
+#about-header{
   background:   rgb(11, 71, 11)  !important;
   color: white;
+ padding-top: 100px;
+  }
+
+#about h2 {
+    background:   rgb(11, 71, 11)  !important;
+  color: white;
+  padding: 0px  20px;
   font-size: 40px;
   margin-bottom: 20px;
  }
 
-#about p { 
+#about p {
+   
+   
   margin: 0 auto;
   font-size: 20px;
    line-height: 2;
