@@ -48,7 +48,7 @@ const Home = () => {
         <button>Learn More</button>
       </div>
 
-      <section id="skills" className='skills-section'>
+      <section id="skills" className='dot-background'>
         <h2>Skills</h2>
 
         {/* Languages */}

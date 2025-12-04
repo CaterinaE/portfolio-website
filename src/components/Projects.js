@@ -20,10 +20,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects">
-     
-      <h2>Projects</h2>
-      
+    <section id="about">
+    <h2>Projects</h2>
+  <div className='dot-background'>
+
+ 
+
       <div className="column">
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
@@ -35,6 +37,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      </div> 
     </section>
   );
 };
