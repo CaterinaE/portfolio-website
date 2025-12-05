@@ -20,12 +20,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="about">
-    <h2>Projects</h2>
-  <div className='dot-background'>
+     <section className='dot-background'>
+ 
+ <h2 id="about-header">Projects</h2>
 
  
-
+ <div  className='about-section'>
       <div className="column">
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
@@ -33,12 +33,12 @@ const Projects = () => {
             <p>{project.description ? project.description : 'No description available'}</p>
             <a href={project.html_url} target="_blank" rel="noopener noreferrer">
               View on GitHub
-            </a>
+            </a> 
           </div>
         ))}
       </div>
-      </div> 
-    </section>
+      </div>
+     </section>
   );
 };
 

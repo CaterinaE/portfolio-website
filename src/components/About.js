@@ -5,7 +5,7 @@ const About = () => {
 
      <section className='dot-background'>
 
-   <section  > 
+   
       <h2 id="about-header">About Me</h2>
 
     
@@ -32,7 +32,7 @@ I am adept at synthesizing technical details into clear, actionable strategies, 
 </p>
 </div> 
 </section>
-    </section>
+    
   );
 };
 
