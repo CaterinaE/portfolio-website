@@ -48,7 +48,9 @@ const Home = () => {
         <button>Learn More</button>
       </div>
 
-      <section id="skills" className='dot-background'>
+      <section className='dot-background'>
+      
+      <div className='skills-section'>
         <h2>Skills</h2>
 
         {/* Languages */}
@@ -107,6 +109,8 @@ const Home = () => {
               </div>
             ))}
           </ul>
+        </div>
+
         </div>
       </section>
     </section>

@@ -3,12 +3,13 @@ import React from 'react';
 const About = () => {
   return (
 
-    
-    <section id="about">
+     <section className='dot-background'>
+
+   <section  > 
       <h2 id="about-header">About Me</h2>
-    <div className='dot-background'>
+
     
-    <div className='about-section'>
+    <div  className='about-section'>
 
      <p> 
      I am a Computer Science graduate from the University of St Andrews, with additional credentials in Business
@@ -30,7 +31,7 @@ const About = () => {
 I am adept at synthesizing technical details into clear, actionable strategies, bridging the gap between tech teams and business stakeholders. With a commitment to excellence and a drive to integrate technical and business perspectives, I am prepared to contribute to and grow with an innovative team.
 </p>
 </div> 
-</div>
+</section>
     </section>
   );
 };
