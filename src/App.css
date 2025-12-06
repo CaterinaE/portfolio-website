@@ -189,6 +189,15 @@ header nav ul li a:hover {
   font-size: 40px; 
 }
 
+#c {
+  padding: 10px 20px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;  
+}
+
 .about-section{
   padding: 40px;
 
@@ -206,10 +215,9 @@ header nav ul li a:hover {
 
 .about-section ul {
   font-size: 20px;
-  padding: 20px;
-  color: black;
-  margin: 0;
-  padding-left: 50px;
+   color: black;
+ 
+  
  }
 
  .about-section li {
@@ -268,12 +276,7 @@ header nav ul li a:hover {
 
   
 /* Contact Section */
-#contact {
-  background-color: #1e1e2f;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
+ 
 
 .contact-form{
 
@@ -325,6 +328,7 @@ a.button {
   font-size: 1.2rem;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 
 @media screen and (max-width: 600px) {
   .column {
