@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.3835b1c4.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.f0081573.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.f0081573.chunk.js.map",
+    "runtime~main.js": "/portfolio-website/static/js/runtime~main.f1845076.js",
+    "runtime~main.js.map": "/portfolio-website/static/js/runtime~main.f1845076.js.map",
+    "static/css/2.ff198c92.chunk.css": "/portfolio-website/static/css/2.ff198c92.chunk.css",
+    "static/js/2.12f04ef0.chunk.js": "/portfolio-website/static/js/2.12f04ef0.chunk.js",
+    "static/js/2.12f04ef0.chunk.js.map": "/portfolio-website/static/js/2.12f04ef0.chunk.js.map",
+    "static/js/3.8ba39429.chunk.js": "/portfolio-website/static/js/3.8ba39429.chunk.js",
+    "static/js/3.8ba39429.chunk.js.map": "/portfolio-website/static/js/3.8ba39429.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "precache-manifest.59a8b0e2abff3cc734c47324d9db1678.js": "/portfolio-website/precache-manifest.59a8b0e2abff3cc734c47324d9db1678.js",
+    "service-worker.js": "/portfolio-website/service-worker.js",
+    "static/css/2.ff198c92.chunk.css.map": "/portfolio-website/static/css/2.ff198c92.chunk.css.map",
+    "static/css/main.3835b1c4.chunk.css.map": "/portfolio-website/static/css/main.3835b1c4.chunk.css.map",
+    "static/media/CE logo.png": "/portfolio-website/static/media/CE logo.e14fa912.png",
+    "static/media/Caterina_Esposito_Pic.jpeg": "/portfolio-website/static/media/Caterina_Esposito_Pic.2cbe556c.jpeg",
+    "static/media/slick-theme.css": "/portfolio-website/static/media/slick.f97e3bbf.svg"
+  }
+}
