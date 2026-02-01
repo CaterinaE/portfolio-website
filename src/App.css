@@ -402,3 +402,15 @@ a.button {
   }
 }
 
+.form-container {
+  padding: 30px;  /* or 35px */
+  border-radius: 25px;
+}
+.contact-form button:hover {
+  transform: scale(1.03);
+  background-color: white;
+  color: #134b1f;
+}.form-container {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
