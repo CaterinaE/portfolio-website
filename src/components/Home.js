@@ -42,11 +42,38 @@ const Home = () => {
         </div>
         <div className="home-column">
           <h1>Hello, I'm Caterina Esposito</h1> 
+          <h1>Software Engineer</h1> 
+          <p className="intro">Computer Science Enthusiast | Developer | Problem Solver</p>
+ 
         </div>
         </div>
-        <p className="intro">Computer Science Enthusiast | Developer | Problem Solver</p>
-        <button>Learn More</button>
+
+        <div className="hero-buttons"> 
+        <button>View Projects</button>
+        <button>Download Resume</button>
+        </div>
+        <div className="hero-buttons">
+        <button>  <a href="#projects" className="btn-primary">View Projects</a></button>
+        <a href="/resume.pdf" className="btn-primary">Download Resume</a>
       </div>
+
+      <p className="hero-stack">
+      • React • JavaScript • Python • SQL • REST APIs
+      </p>
+
+                  </div>
+
+
+
+                  <header  >
+ 
+</header>
+
+
+
+
+
+
 
       <section className='dot-background'>
       
