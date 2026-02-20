@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import CaterinaPic from './Caterina_Esposito_Pic.jpeg';  // Ensure correct path
 
@@ -37,106 +38,94 @@ const Home = () => {
     <section>
       <div id="home">
         <div className="home-row">
-        <div className="home-column">
-          <img src={CaterinaPic} alt="Caterina Esposito Pic" />
-        </div>
-        <div className="home-column">
-          <h1>Hello, I'm Caterina Esposito</h1> 
-          <h1>Software Engineer</h1> 
-          <p className="intro">Computer Science Enthusiast | Developer | Problem Solver</p>
- 
-        </div>
-        </div>
+          <div className="home-column">
+            <img src={CaterinaPic} alt="Caterina Esposito Pic" />
+          </div>
+        
+          <div className="home-column">
+            <h1>Hello, I'm Caterina Esposito</h1>
+            <h1>Software Engineer</h1>
+            <p>Computer Science Enthusiast | Developer | Problem Solver</p>
 
-        <div className="hero-buttons"> 
-        <button>View Projects</button>
-        <button>Download Resume</button>
+            <div className="hero-buttons">
+              <Link to="/projects" className="btn-outline"> View Projects</Link>
+              <a href="/Caterina-Esposito-Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline">  Download Resume
+              </a>
+
+            </div>
+
+            <p className="hero-stack">• React • JavaScript • Python • SQL • REST APIs
+            </p>
+
+
+          </div> 
         </div>
-        <div className="hero-buttons">
-        <button>  <a href="#projects" className="btn-primary">View Projects</a></button>
-        <a href="/resume.pdf" className="btn-primary">Download Resume</a>
       </div>
 
-      <p className="hero-stack">
-      • React • JavaScript • Python • SQL • REST APIs
-      </p>
-
-                  </div>
-
-
-
-                  <header  >
  
-</header>
-
-
-
-
-
-
 
       <section className='dot-background'>
-      
-      <div className='skills-section'>
-        <h2>Skills</h2>
 
-        {/* Languages */}
-        <div className='skills-category'>
-          <h3>Languages</h3>
-          <ul>
-            {["JavaScript", "Java", "Python", "SQL"].map(skill => (
-              <div key={skill}>
-                <li   onClick={() => handleSkillClick(skill)}  >
-                  {skill}
-                </li>
-                {/* Show description under the clicked skill */}
-                {selectedSkill === skill && (
-                  <p>{skillDescriptions[skill]}</p>
-                )}
-              </div>
-            ))}
-          </ul>
-        </div>
+        <div className='skills-section'>
+          <h2>Skills</h2>
 
-        {/* Tools & Frameworks */}
-        <div className='skills-category'>
-          <h3>Tools & Frameworks</h3>
-          <ul>
-            {["JUnit", "Spring Boot", "Git", "REST APIs", "Node", "MongoDB", "Bootstrap", "React", "cPanel", "Tableau", "Salesforce", "Affinity Designer", "MS-Office", "Apache Hadoop", "Figma"].map(skill => (
-              <div key={skill}>
-                <li 
-                  onClick={() => handleSkillClick(skill)} 
-                  style={{ cursor: 'pointer', color: selectedSkill === skill ? 'blue' : 'black' }}>
-                  {skill}
-                </li>
-                {/* Show description under the clicked skill */}
-                {selectedSkill === skill && (
-                  <p>{skillDescriptions[skill]}</p>
-                )}
-              </div>
-            ))}
-          </ul>
-        </div>
+          {/* Languages */}
+          <div className='skills-category'>
+            <h3>Languages</h3>
+            <ul>
+              {["JavaScript", "Java", "Python", "SQL"].map(skill => (
+                <div key={skill}>
+                  <li onClick={() => handleSkillClick(skill)}  >
+                    {skill}
+                  </li>
+                  {/* Show description under the clicked skill */}
+                  {selectedSkill === skill && (
+                    <p>{skillDescriptions[skill]}</p>
+                  )}
+                </div>
+              ))}
+            </ul>
+          </div>
 
-        {/* Methodologies */}
-        <div className='skills-category'>
-          <h3>Methodologies</h3>
-          <ul>
-            {["Unit Testing", "SCRUM"].map(skill => (
-              <div key={skill}>
-                <li 
-                  onClick={() => handleSkillClick(skill)} 
-                  style={{ cursor: 'pointer', color: selectedSkill === skill ? 'blue' : 'black' }}>
-                  {skill}
-                </li>
-                {/* Show description under the clicked skill */}
-                {selectedSkill === skill && (
-                  <p>{skillDescriptions[skill]}</p>
-                )}
-              </div>
-            ))}
-          </ul>
-        </div>
+          {/* Tools & Frameworks */}
+          <div className='skills-category'>
+            <h3>Tools & Frameworks</h3>
+            <ul>
+              {["JUnit", "Spring Boot", "Git", "REST APIs", "Node", "MongoDB", "Bootstrap", "React", "cPanel", "Tableau", "Salesforce", "Affinity Designer", "MS-Office", "Apache Hadoop", "Figma"].map(skill => (
+                <div key={skill}>
+                  <li
+                    onClick={() => handleSkillClick(skill)}
+                    style={{ cursor: 'pointer', color: selectedSkill === skill ? 'blue' : 'black' }}>
+                    {skill}
+                  </li>
+                  {/* Show description under the clicked skill */}
+                  {selectedSkill === skill && (
+                    <p>{skillDescriptions[skill]}</p>
+                  )}
+                </div>
+              ))}
+            </ul>
+          </div>
+
+          {/* Methodologies */}
+          <div className='skills-category'>
+            <h3>Methodologies</h3>
+            <ul>
+              {["Unit Testing", "SCRUM"].map(skill => (
+                <div key={skill}>
+                  <li
+                    onClick={() => handleSkillClick(skill)}
+                    style={{ cursor: 'pointer', color: selectedSkill === skill ? 'blue' : 'black' }}>
+                    {skill}
+                  </li>
+                  {/* Show description under the clicked skill */}
+                  {selectedSkill === skill && (
+                    <p>{skillDescriptions[skill]}</p>
+                  )}
+                </div>
+              ))}
+            </ul>
+          </div>
 
         </div>
       </section>
