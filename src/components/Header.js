@@ -27,14 +27,7 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar">
-        <button
-          type="button"
-          className="hamburger"
-          onClick={() => setMenuOpen(true)}
-          aria-label="Open menu"
-          aria-expanded={menuOpen}
-        >
-          ☰
+        <button type="button"  className="hamburger"  onClick={() => setMenuOpen(true)}  aria-label="Open menu"  aria-expanded={menuOpen}  >  ☰
         </button>
 
         <ul className="nav-links desktop-nav">
@@ -60,13 +53,7 @@ const Header = () => {
         onClick={(e) => e.stopPropagation()} // prevents clicks inside from closing
       >
         <div className="drawer-header">
-          <button
-            type="button"
-            className="drawer-close"
-            onClick={closeMenu}
-            aria-label="Close menu"
-          >
-            ✕
+          <button type="button" className="drawer-close" onClick={closeMenu} aria-label="Close menu"> ✕
           </button>
         </div>
 

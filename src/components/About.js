@@ -1,40 +1,50 @@
-import React from 'react';
- 
+import React from "react";
+
 const About = () => {
   return (
+    <section className="dot-background">
+      <h2 className="section-header">About Me</h2>
 
-          <section className='dot-background'>
+      <div className="about-section">
+        <div className="about-card">
+          <p className="about-lead">
+            I’m a Computer Science graduate from the
+            University of St Andrews with a background in business from American University’s Kogod School of Business. 
+            I build clean, scalable web applications and integrate AI-powered features into modern web platforms. </p>
+        </div>
 
-   <section  > 
-      <h2 id="about-header">About Me</h2>
+        <h3 className="about-subtitle">Technical Skills</h3>
 
-    
-    <div  className='about-section'>
+        <div className="about-card">
+          <ul className="skills-list">
+            <li>
+              <strong>Languages:</strong> Java, JavaScript, Python, SQL
+            </li>
+            <li>
+              <strong>Frontend:</strong> React, Bootstrap
+            </li>
+            <li>
+              <strong>Backend:</strong> Node.js, REST APIs
+            </li>
+            <li>
+              <strong>AI & Automation:</strong> OpenAI API Integration, LLM-based Feature Development, Prompt Engineering
+            </li>
+            <li>
+              <strong>Tools:</strong> Git, Spring Boot, JUnit, Tableau, Salesforce
+            </li>
+            <li>
+              <strong>Deployment:</strong> cPanel, FileZilla
+            </li>
+          </ul>
+        </div>
 
-     <p id="c"> 
-     I am a Computer Science graduate from the University of St Andrews, with additional credentials in Business
-      Administration from American University's Kogod School of Business. This combination of technical and business expertise equips me to address challenges at the intersection of technology and commerce effectively.
-
-     </p>
-
-
-  <h1>Technical Skills</h1>
-   <section id="c">
-
-      <ul>
-        <li><b>Programming Languages:</b> Java, JavaScript, Python</li>
-        <li><strong>Full-Stack Development:</strong> Proficient in React and Node.js for both front-end and back-end development.</li>
-        <li><strong>Front-End Technologies:</strong> Experienced with HTML, CSS, and Bootstrap, demonstrated through projects like the Railway Union Club's website and various interactive applications.</li>
-        <li><strong>Back-End Solutions:</strong> Skilled in creating efficient, scalable solutions using Node.js.</li>
-        <li><strong>Web Hosting & Deployment:</strong> Familiar with cPanel and FileZilla for managing web hosting and file transfers.</li>
-        <li><strong>Data Management:</strong> Proficient in SQL, Git, Tableau, Statcrunch, and Salesforce for data management and actionable insights.</li>
-      </ul>
-</section>
-<p id="c"> 
-I am adept at synthesizing technical details into clear, actionable strategies, bridging the gap between tech teams and business stakeholders. With a commitment to excellence and a drive to integrate technical and business perspectives, I am prepared to contribute to and grow with an innovative team.
-</p>
-</div> 
-</section>
+        <div className="about-card">
+          <p className="about-note">
+            I translate business requirements into clear technical solutions,
+            collaborate closely with stakeholders, and deliver polished, user-focused applications. I’m particularly interested in building intelligent, scalable systems that combine strong engineering foundations with modern AI capabilities.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
