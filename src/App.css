@@ -76,12 +76,13 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #edbe14;
 }
+
 .dot-background {
   background-color: #f8faf8;
   background-image: radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1px);
   background-size: 18px 18px;
-} 
- 
+}
+
 /* ===== Hamburger (hidden by default, shown only on mobile) ===== */
 .hamburger {
   display: none;
@@ -184,10 +185,10 @@ header nav ul li a:hover {
 .drawer-links a:hover {
   background: rgba(0, 0, 0, 0.05);
   opacity: 0.85;
-} 
+}
 
 
- 
+
 /* =========================  ABOUT SECTION  ========================= */
 
 /* Section Header */
@@ -215,11 +216,13 @@ header nav ul li a:hover {
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
 }
+
 .about-card:first-of-type {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
+
 /* Subheading */
 .about-subtitle {
   margin: 0 0 20px;
@@ -266,7 +269,7 @@ header nav ul li a:hover {
   }
 }
 
-/*   MOBILE   */ 
+/*   MOBILE   */
 @media (max-width: 600px) {
 
   .section-header {
@@ -296,7 +299,6 @@ header nav ul li a:hover {
 
 
 
-  
 /* Project Section */
 .project-card {
   background: white;
@@ -309,6 +311,7 @@ header nav ul li a:hover {
   justify-content: space-between;
   transition: all 0.3s ease;
   text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
@@ -396,7 +399,48 @@ header nav ul li a:hover {
   background: rgb(11, 71, 11);
   color: white;
 }
+.standard-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: 2px solid rgb(11, 71, 11);
+  background: rgb(11, 71, 11);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-bottom: 80px;
+  letter-spacing: 0.3px;
+}
 
+.standard-btn:hover {
+  background: #e67e22;
+  border-color: #e67e22;
+  color: white;
+}
+
+
+.projects-intro {
+  max-width: 1200px;
+  margin: 32px auto 60px;
+  padding: 0 20px;
+}
+
+.projects-intro p {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  padding-left: 18px;
+  border-left: 4px solid rgb(11, 71, 11);
+  max-width: 820px;
+}
 @media (max-width: 992px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -406,16 +450,14 @@ header nav ul li a:hover {
 
 /* Mobile */
 @media (max-width: 600px) {
- 
-  
-   button {
+  button {
     width: 100%;
     padding: 14px 18px;
     font-size: 1rem;
     margin: 0;
   }
 
-   
+
   .column {
     width: 100%;
     margin: 50px;
@@ -425,7 +467,7 @@ header nav ul li a:hover {
   .projects-grid {
     grid-template-columns: 1fr;
   }
- 
+
 }
 
 
@@ -558,7 +600,7 @@ footer {
   color: white;
 }
 
- 
+
 
 /* Hide mobile UI on desktop no matter what state is */
 @media (min-width: 769px) {
@@ -586,7 +628,7 @@ footer {
   h1 {
     font-size: 3rem;
   }
- 
+
 
   #about p {
     font-size: 1.1rem;
@@ -611,13 +653,13 @@ footer {
   .projects-grid {
     padding: 30px 16px;
   }
-  
- 
-}
- 
 
- 
-  
+
+}
+
+
+
+
 
 /* =========================  HOME  ========================= */
 
@@ -638,10 +680,11 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 #home a:hover {
   background-color: #e67e22;
 }
-   
+
 /* Columns */
 .home-column {
   width: 100%;
@@ -673,14 +716,14 @@ footer {
   white-space: nowrap;
 }
 
-  /* Typography */
+/* Typography */
 #home h1 {
   font-size: 3.6rem;
   font-weight: 600;
   letter-spacing: 0.2px;
   line-height: 1.05;
 }
- 
+
 
 #home p {
   font-size: 1.25rem;
@@ -777,8 +820,8 @@ footer {
 
   .hero-title .hero-name {
     white-space: normal;
-   }
- 
+  }
+
   #home h1 {
     font-size: clamp(2.2rem, 6vw, 4.5rem);
     line-height: 1.1;
@@ -843,19 +886,19 @@ footer {
   }
 }
 
- 
- /* Desktop:  */
- @media (min-width: 769px) {
+
+/* Desktop:  */
+@media (min-width: 769px) {
   .hero-title {
     max-width: 900px;
     margin: 0 auto 24px;
     line-height: 1.1;
-  }  
-} 
+  }
+}
 
 
 /* =========================  HOME SKILLS  ========================= */
-  
+
 .skills-section {
   padding: 40px;
 }
@@ -883,5 +926,4 @@ footer {
   border-left: 3px solid rgb(11, 71, 11);
   margin-bottom: 20px;
 }
- 
- 
+
