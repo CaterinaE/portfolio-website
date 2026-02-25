@@ -5,8 +5,7 @@ const Contact = () => {
   const formRef = useRef(null);
   const [status, setStatus] = useState("");
   const [isSending, setIsSending] = useState(false);
-  const [statusType, setStatusType] = useState("");
-  const sendEmail = (e) => {
+   const sendEmail = (e) => {
     e.preventDefault();
     setStatus("");
     setIsSending(true);
