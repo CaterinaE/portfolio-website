@@ -69,32 +69,21 @@ const Home = () => {
             </h1>
 
             <p className="hero-description">
-  Designing and building scalable web applications<br />
-  across frontend and backend with React and Java.
-</p>
+              Designing and building scalable web applications<br />
+              across frontend and backend with React and Java.
+            </p>
 
             <div className="hero-buttons">
               <Link to="/projects" className="btn-outline">
                 View Projects
               </Link>
 
-              <a
-                href="https://github.com/CaterinaE"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-              >
-                GitHub
-              </a>
-
-              <a
-                href="/Caterina-Esposito-Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-              >
+              <a  href="https://github.com/CaterinaE" target="_blank"  rel="noopener noreferrer" className="btn-outline"
+              >  GitHub  </a>
+              <a href="/Caterina-Esposito-Resume.pdf" className="btn-outline" target="_blank" rel="noreferrer">
                 Download Resume
               </a>
+ 
             </div>
 
             <p className="hero-stack">
