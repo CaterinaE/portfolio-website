@@ -426,7 +426,7 @@ header nav ul li a:hover {
 
 .projects-intro {
   max-width: 1200px;
-  margin: 32px auto 60px;
+  margin: 32px auto 0px;
   padding: 0 20px;
 }
 
@@ -470,16 +470,7 @@ header nav ul li a:hover {
 
 }
 
-
-
-
-
-
-
-
-
-
-/*  CONTACT PAGE   */
+ /* CONTACT PAGE */
 #contact {
   max-width: 720px;
   margin: 0 auto;
@@ -491,19 +482,9 @@ header nav ul li a:hover {
   backdrop-filter: blur(3px);
 }
 
-/* Title inside the card */
-#contact h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 18px;
-  color: #1f1f1f;
-  letter-spacing: 0.2px;
-}
-
-/* Contact lines */
 #contact p {
   margin: 10px 0;
-  text-align: center;
+  text-align: left;
   color: #444;
   line-height: 1.7;
 }
@@ -511,26 +492,38 @@ header nav ul li a:hover {
 /* Links */
 #contact a {
   color: #0b470b;
-  text-decoration: underline;
-  text-underline-offset: 3px;
   font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
   transition: opacity 0.2s ease, color 0.2s ease;
 }
+#contact a:hover{ opacity: 0.9; }
+#contact a:active{ opacity: 0.6; }
 
-#contact a:hover {
-  opacity: 0.85;
+/* Contact info alignment */
+.contact-info{
+  max-width: 560px;
+  margin: 0 auto 18px;
+}
+.contact-info p {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+.contact-info strong {
+  min-width: 92px;
+  font-weight: 600;
+  color: #1f1f1f;
 }
 
-#contact a:active {
-  opacity: 0.6;
-}
-
+/* Form card */
 .contact-form {
   margin: 22px auto 0;
   width: 100%;
   max-width: 560px;
   background: linear-gradient(135deg, rgb(11, 71, 11), rgb(14, 90, 14));
-  padding: 18px 18px;
+  padding: 18px;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -543,20 +536,20 @@ header nav ul li a:hover {
   width: 100%;
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0,0,0,0.14);
   font-size: 1rem;
   outline: none;
   background: rgba(255, 255, 255, 0.96);
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
+.contact-form ::placeholder {
+  color: rgba(0,0,0,0.55);
+}
+
 .contact-form textarea {
   resize: vertical;
   min-height: 140px;
-}
-
-.contact-form input[type="text"] {
-  margin-top: 0 !important;
 }
 
 .contact-form input:focus,
@@ -565,7 +558,15 @@ header nav ul li a:hover {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.22);
 }
 
-.contact-form button {
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible{
+  outline: 3px solid rgba(255,255,255,0.55);
+  outline-offset: 3px;
+}
+
+/* Button */
+.contact-form button{
   align-self: center;
   margin-top: 6px;
   padding: 10px 18px;
@@ -577,20 +578,111 @@ header nav ul li a:hover {
   font-size: 1rem;
   letter-spacing: 0.2px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, color 0.18s ease;
 }
 
-.contact-form button:hover {
-  background-color: white;
+.contact-form button:hover{
+  background-color: #fff;
   color: #134b1f;
   transform: scale(1.03);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
-.contact-form button:active {
-  transform: translateY(0);
+.contact-form button:active{
+  transform: scale(0.99);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
 
+/* Screen reader only */
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+} 
+
+.form-status {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.92rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  animation: fadeIn 0.25s ease;
+  color: white !important;
+}
+
+ 
+ 
+ 
+/* ===== CONTACT (MOBILE) ===== */
+@media (max-width: 768px){
+
+   #contact{
+    max-width: 94vw;
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  /* Contact info: stack label/value neatly */
+  .contact-info{
+    max-width: 100%;
+    margin: 0 auto 14px;
+  }
+
+  .contact-info p{
+    display: block;          
+    margin: 10px 0;
+  }
+
+  .contact-info strong{
+    display: block;
+    min-width: 0;            
+    margin-bottom: 3px;       
+  }
+
+  /* Form box: match card width */
+  .contact-form{
+    max-width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  /* Bigger touch targets */
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 16px;         
+    padding: 12px 14px;
+    border-radius: 12px;
+  }
+
+  .contact-form textarea{
+    min-height: 140px;
+  }
+
+  /* Button: full-width, thumb friendly */
+  .contact-form button{
+    width: 100%;
+    max-width: 360px;         
+    padding: 12px 18px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 420px){
+  #contact{
+    padding: 16px 14px;
+  }
+  .contact-form{
+    padding: 14px;
+  }
+}
 
 /* Footer */
 footer {
@@ -633,15 +725,7 @@ footer {
   #about p {
     font-size: 1.1rem;
   }
-
-  #projects h2 {
-    font-size: 2rem;
-  }
-
-  .project-card {
-    margin: 10px 0;
-  }
-
+  
   #contact h2 {
     font-size: 2rem;
   }
@@ -926,4 +1010,5 @@ footer {
   border-left: 3px solid rgb(11, 71, 11);
   margin-bottom: 20px;
 }
-
+ 
+ 
