@@ -37,8 +37,8 @@ const Header = () => {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
-        <img src={Logo} alt="Logo" className="nav-logo" />
-      </nav>
+        <Link to="/"> <img src={Logo} alt="Logo" className="nav-logo" /> </Link>   
+     </nav>
 
       {/* Overlay: click it to close */}
       <div
